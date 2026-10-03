@@ -5,6 +5,8 @@ description: Accurate, well-cited research of the Urantia Papers with the uranti
 
 You have the urantia-papers MCP tools. Use these patterns for accurate, well-cited answers.
 
+These are defaults. If the user gives an explicit instruction that differs, such as a different citation style or no quotes, follow the user.
+
 ## Tool selection
 
 - **A question in plain language:** `search.semantic` with `query`. It finds passages related in meaning, even without the same words.
