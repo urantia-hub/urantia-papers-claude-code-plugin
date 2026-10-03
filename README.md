@@ -23,6 +23,8 @@ Cursor: the repo is also a Cursor plugin (`.cursor-plugin/plugin.json`), listed 
 { "mcpServers": { "urantia-papers": { "type": "http", "url": "https://api.urantia.dev/mcp" } } }
 ```
 
+ChatGPT and Codex: the repo root is also a portable plugin package (`plugin.json`, `mcp.json`, `skills/`, `assets/`). Build the ZIP for the OpenAI plugin directory with `scripts/build-openai-zip.sh`.
+
 Setup for other clients: [docs.urantia.dev/mcp-servers](https://docs.urantia.dev/mcp-servers).
 
 ## What's included
