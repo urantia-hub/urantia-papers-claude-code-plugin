@@ -1,0 +1,15 @@
+{
+  "name": "urantia-papers",
+  "version": "1.1.0",
+  "description": "Search and read the Urantia Papers: paragraph lookup, keyword and semantic search, named entities, and Bible cross-references. 19 read-only tools, no key.",
+  "author": {
+    "name": "Urantia.dev",
+    "email": "openurantia@gmail.com"
+  },
+  "homepage": "https://docs.urantia.dev/mcp-servers",
+  "repository": "https://github.com/urantia-hub/urantia-papers-claude-code-plugin",
+  "license": "MIT",
+  "keywords": ["urantia", "urantia-papers", "urantia-book", "bible", "mcp", "search", "semantic-search", "reference"],
+  "logo": "assets/logo.svg",
+  "mcpServers": ".mcp.json"
+}
