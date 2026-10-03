@@ -1,6 +1,7 @@
 {
   "mcpServers": {
     "urantia-papers": {
+      "type": "http",
       "url": "https://api.urantia.dev/mcp"
     }
   }

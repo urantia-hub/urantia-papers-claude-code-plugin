@@ -1,0 +1,15 @@
+{
+  "name": "urantia-papers",
+  "owner": {
+    "name": "Urantia.dev",
+    "url": "https://urantia.dev"
+  },
+  "description": "The Urantia Papers plugin from urantia.dev.",
+  "plugins": [
+    {
+      "name": "urantia-papers",
+      "source": "./",
+      "description": "Search and read the Urantia Papers: paragraph lookup, keyword and semantic search, named entities, and Bible cross-references. 19 read-only tools, no key."
+    }
+  ]
+}
