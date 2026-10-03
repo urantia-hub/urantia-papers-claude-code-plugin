@@ -1,54 +1,74 @@
-# Urantia Papers Plugin for Claude Code
+# Urantia Papers plugin
 
-Search, read, and explore the Urantia Book through the [Urantia Papers API](https://urantia.dev). Gives Claude 13 tools for paragraphs, search, entities, and audio — zero setup.
+Search and read the Urantia Papers from Claude Code or Cursor. The plugin connects the hosted [urantia.dev](https://urantia.dev) MCP server and adds a research skill for well-cited answers. No key, no account, no local process.
 
 ## Install
 
+Claude Code, as a plugin (the MCP server and the research skill):
+
 ```
-/plugin install urantia-papers
+/plugin marketplace add urantia-hub/urantia-papers-claude-code-plugin
+/plugin install urantia-papers@urantia-papers
 ```
 
-## What's Included
+Claude Code, the MCP server only:
 
-- **MCP Server** — Connects to `api.urantia.dev/mcp` (Streamable HTTP, no local process)
-- **Research Skill** — Guides Claude toward accurate, well-cited responses using optimal tool patterns
+```
+claude mcp add --transport http urantia-papers https://api.urantia.dev/mcp
+```
 
-## Tools Available
+Cursor, or any client that reads `.mcp.json`:
 
-| Tool | Description |
+```json
+{ "mcpServers": { "urantia-papers": { "type": "http", "url": "https://api.urantia.dev/mcp" } } }
+```
+
+Setup for other clients: [docs.urantia.dev/mcp-servers](https://docs.urantia.dev/mcp-servers).
+
+## What's included
+
+- **MCP server:** `https://api.urantia.dev/mcp` (Streamable HTTP). 19 read-only tools.
+- **Research skill:** `skills/urantia-research`, which tells the model which tool to use and how to cite.
+
+## Tools
+
+| Tool | What it does |
 |------|-------------|
-| `get_table_of_contents` | Full table of contents — 4 parts, 197 papers |
-| `list_papers` | All 197 papers with metadata |
-| `get_paper` | Single paper with all paragraphs |
-| `get_paper_sections` | Sections within a paper |
-| `get_paragraph` | Paragraph by reference (e.g., `2:5.10`) |
-| `get_paragraph_context` | Paragraph with surrounding context |
-| `get_random_paragraph` | Random paragraph for exploration |
-| `search` | Full-text search (and/or/phrase modes) |
-| `semantic_search` | Meaning-based similarity search |
-| `list_entities` | Browse 4,400+ entities |
-| `get_entity` | Entity details and cross-references |
-| `get_entity_paragraphs` | All paragraphs mentioning an entity |
-| `get_audio` | Audio file URLs for a paragraph |
+| `toc.get` | Table of contents: the Foreword, 4 parts, 197 papers |
+| `papers.list` | All 197 papers with metadata |
+| `papers.get` | One whole paper, as reference, section, and plain text |
+| `papers.sections` | Sections within a paper |
+| `paragraphs.get` | A paragraph by reference, for example `2:5.10` |
+| `paragraphs.context` | A paragraph with the paragraphs around it |
+| `paragraphs.random` | A random paragraph |
+| `search.fulltext` | Keyword search (`and`, `or`, `phrase`) |
+| `search.semantic` | Search by meaning |
+| `entities.list` | Browse more than 4,400 named beings, places, and concepts |
+| `entities.get` | One entity's details |
+| `entities.paragraphs` | Every paragraph that names an entity |
+| `audio.get` | Narration audio links for a paragraph |
+| `bible.books`, `bible.book`, `bible.chapter`, `bible.verse` | The World English Bible |
+| `bible.search.semantic` | Search the Bible by meaning, with related Urantia paragraphs |
+| `bible.verse.urantia_parallels` | The nearest Urantia paragraphs for a Bible verse |
 
-## Example Prompts
+## Example prompts
 
-- "What does the Urantia Book say about what happens after death?"
-- "Search for passages about love and service"
-- "Read Paper 1 about the Universal Father"
+- "What do the Urantia Papers say about what happens after death? Quote the paragraphs and give the references."
+- "Read Paper 1 about the Universal Father."
 - "Who is Machiventa Melchizedek?"
-- "Show me paragraph 2:5.10 with surrounding context"
+- "Show me paragraph 2:5.10 with the paragraphs around it."
+- "Which Urantia paragraphs are closest in meaning to Matthew 5:3?"
 
 ## Links
 
-- [API Documentation](https://urantia.dev)
-- [MCP Server Setup](https://urantia.dev/mcp-servers)
-- [API Reference](https://urantia.dev/api-reference/introduction)
+- [urantia.dev](https://urantia.dev)
+- [Docs](https://docs.urantia.dev)
+- [API reference](https://docs.urantia.dev/api-reference/introduction)
 
 ## License
 
-This project is licensed under the [MIT License](./LICENSE).
+[MIT](./LICENSE).
 
 ## Disclaimer
 
-This is an independent community project by [Adams Technologies LLC](https://adamstechnologies.com). It is not affiliated with, endorsed by, or connected with Urantia Foundation. The original English text of *The Urantia Book* is in the public domain (*Michael Foundation v. Urantia Foundation*, 10th Cir. 2003). All use of "Urantia" is nominative fair use to identify the subject matter.
+This is an independent community project operated by Adams Technologies LLC. It is not affiliated with, endorsed by, or connected with Urantia Foundation. The original English text of *The Urantia Book* is in the public domain (*Michael Foundation v. Urantia Foundation*, 10th Cir. 2003). All use of "Urantia" is nominative fair use to identify the subject matter.
