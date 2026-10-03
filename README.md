@@ -17,7 +17,7 @@ Claude Code, the MCP server only:
 claude mcp add --transport http urantia-papers https://api.urantia.dev/mcp
 ```
 
-Cursor, or any client that reads `.mcp.json`:
+Cursor: the repo is also a Cursor plugin (`.cursor-plugin/plugin.json`), listed at [cursor.directory/plugins/urantia-papers](https://cursor.directory/plugins/urantia-papers). Or add the server by hand, in Cursor or any client that reads an `mcpServers` config:
 
 ```json
 { "mcpServers": { "urantia-papers": { "type": "http", "url": "https://api.urantia.dev/mcp" } } }
