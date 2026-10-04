@@ -1,6 +1,6 @@
 # Urantia Papers plugin
 
-Search and read the Urantia Papers from Claude Code or Cursor. The plugin connects the hosted [urantia.dev](https://urantia.dev) MCP server and adds a research skill for well-cited answers. No key, no account, no local process.
+Search and read the Urantia Papers from Claude Code, Cursor, Gemini CLI, ChatGPT, or Codex. The plugin connects the hosted [urantia.dev](https://urantia.dev) MCP server and adds a research skill for well-cited answers. No key, no account, no local process.
 
 ## Install
 
@@ -21,6 +21,12 @@ Cursor: the repo is also a Cursor plugin (`.cursor-plugin/plugin.json`), listed 
 
 ```json
 { "mcpServers": { "urantia-papers": { "type": "http", "url": "https://api.urantia.dev/mcp" } } }
+```
+
+Gemini CLI: the repo is also a Gemini CLI extension (`gemini-extension.json`):
+
+```
+gemini extensions install https://github.com/urantia-hub/urantia-papers-claude-code-plugin
 ```
 
 ChatGPT and Codex: the repo root is also a portable plugin package (`plugin.json`, `mcp.json`, `skills/`, `assets/`). Build the ZIP for the OpenAI plugin directory with `scripts/build-openai-zip.sh`.

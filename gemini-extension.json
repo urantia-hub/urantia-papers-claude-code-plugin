@@ -1,0 +1,10 @@
+{
+  "name": "urantia-papers",
+  "version": "1.2.2",
+  "description": "Search and read the Urantia Papers by reference, keyword, or meaning. 19 read-only tools and a research skill. No key or account.",
+  "mcpServers": {
+    "urantia-papers": {
+      "httpUrl": "https://api.urantia.dev/mcp"
+    }
+  }
+}
