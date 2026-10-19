@@ -1,6 +1,6 @@
 ---
 name: urantia-research
-description: Accurate, well-cited research of the Urantia Papers with the urantia-papers MCP tools. Use for questions about the Urantia Papers (The Urantia Book), its teachings, beings, places, and concepts, or its parallels with the Bible.
+description: Accurate, well-cited research of the Urantia Papers with the urantia-papers MCP tools. Use for questions about the Urantia Papers (The Urantia Book), its teachings, beings, places, and concepts, or its parallels with the Bible and the texts of other religions.
 ---
 
 You have the urantia-papers MCP tools. Use these patterns for accurate, well-cited answers.
@@ -16,6 +16,8 @@ These are defaults. If the user gives an explicit instruction that differs, such
 - **Structure:** `toc.get` for the Foreword, the 4 parts, and all 197 papers. `papers.sections` for the sections of one paper.
 - **A being, place, or concept:** `entities.list` with `query`, then `entities.get` with `entity_id`, then `entities.paragraphs` with `entity_id`. An entity with `citationCount` 0 is a cross-reference: follow its `seeAlso`.
 - **The Bible:** `bible.verse` for a verse, `bible.verse.urantia_parallels` for the nearest Urantia paragraphs, `bible.search.semantic` to search the Bible by meaning. Pass `include_bible_parallels` on a paragraph tool for the other direction. These are semantic neighbors, not a curated list.
+- **Another text (the Koran, the Dhammapada, the Bhagavad Gita, the Poetic Edda, and the others):** `works.list` for the works and their ids, `works.read` for a passage by reference, `works.search` or `works.search.semantic` to search them, `works.urantia_parallels` for the nearest Urantia paragraphs. Each text is one public domain translation; name it when you quote.
+- **A quotation or a citation:** `quotes.verify` to check a quote against the text, `cite.get` for a citation of a paragraph in APA, MLA, Chicago, or BibTeX.
 
 ## Research workflow
 

@@ -35,7 +35,7 @@ Setup for other clients: [docs.urantia.dev/mcp-servers](https://docs.urantia.dev
 
 ## What's included
 
-- **MCP server:** `https://api.urantia.dev/mcp` (Streamable HTTP). 19 read-only tools.
+- **MCP server:** `https://api.urantia.dev/mcp` (Streamable HTTP). 26 read-only tools.
 - **Research skill:** `skills/urantia-research`, which tells the model which tool to use and how to cite.
 
 ## Tools
@@ -58,6 +58,12 @@ Setup for other clients: [docs.urantia.dev/mcp-servers](https://docs.urantia.dev
 | `bible.books`, `bible.book`, `bible.chapter`, `bible.verse` | The World English Bible |
 | `bible.search.semantic` | Search the Bible by meaning, with related Urantia paragraphs |
 | `bible.verse.urantia_parallels` | The nearest Urantia paragraphs for a Bible verse |
+| `works.list` | The Bible and the 21 other texts, with tradition and edition |
+| `works.search`, `works.search.semantic` | Search the works by reference, keyword, or meaning |
+| `works.read` | A passage, range, or chapter of a work by reference, for example `BG 2.47` |
+| `works.urantia_parallels` | The nearest Urantia paragraphs for a passage of a work |
+| `quotes.verify` | Check a quotation against the text of the Papers |
+| `cite.get` | A citation of a paragraph in APA, MLA, Chicago, or BibTeX |
 
 ## Example prompts
 
@@ -66,6 +72,7 @@ Setup for other clients: [docs.urantia.dev/mcp-servers](https://docs.urantia.dev
 - "Who is Machiventa Melchizedek?"
 - "Show me paragraph 2:5.10 with the paragraphs around it."
 - "Which Urantia paragraphs are closest in meaning to Matthew 5:3?"
+- "What does the Dhammapada say about anger? Show the nearest Urantia paragraphs."
 
 ## Links
 
