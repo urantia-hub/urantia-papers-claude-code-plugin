@@ -29,7 +29,9 @@ Gemini CLI: the repo is also a Gemini CLI extension (`gemini-extension.json`):
 gemini extensions install https://github.com/urantia-hub/urantia-papers-claude-code-plugin
 ```
 
-ChatGPT and Codex: the repo root is also a portable plugin package (`plugin.json`, `mcp.json`, `skills/`, `assets/`). Build the ZIP for the OpenAI plugin directory with `scripts/build-openai-zip.sh`.
+ChatGPT: install the [Urantia Papers plugin](https://chatgpt.com/plugins/plugin_asdk_app_6ac15926d5388191a941565bfaaa2a9a).
+
+The repo root is also a portable plugin package (`plugin.json`, `mcp.json`, `skills/`, `assets/`). Build the ZIP for the OpenAI plugin directory with `scripts/build-openai-zip.sh`.
 
 Setup for other clients: [docs.urantia.dev/mcp-servers](https://docs.urantia.dev/mcp-servers).
 
