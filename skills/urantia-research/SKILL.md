@@ -1,6 +1,6 @@
 ---
 name: urantia-research
-description: Accurate, well-cited research of the Urantia Papers with the urantia-papers MCP tools. Use for questions about the Urantia Papers (The Urantia Book), its teachings, beings, places, and concepts, or its parallels with the Bible and the texts of other religions.
+description: Accurate, well-cited research of the Urantia Papers with the urantia-papers MCP tools. Use for questions about the Urantia Papers (The Urantia Book), its teachings, beings, places, and concepts, or its parallels with the Bible and other scriptures and classics.
 ---
 
 You have the urantia-papers MCP tools. Use these patterns for accurate, well-cited answers.
