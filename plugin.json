@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "urantia-papers",
-  "version": "1.3.2",
-  "description": "Search and read the Urantia Papers: paragraph lookup by reference, keyword and semantic search, named entities, and cross-references to the Bible and 21 other public domain texts, scriptures and classics. 26 read-only tools.",
+  "version": "1.4.0",
+  "description": "Search and read the Urantia Papers in English and Spanish: paragraph lookup by reference, keyword and semantic search, named entities, and cross-references to the Bible and 21 other public domain texts, scriptures and classics. 26 read-only tools.",
   "author": {
     "name": "Urantia.dev",
     "email": "kelson@urantia.dev",
@@ -25,12 +25,13 @@
       "interface": {
         "displayName": "Urantia Papers",
         "shortDescription": "Search, read, and cite",
-        "longDescription": "Urantia Papers gives the assistant direct, structured access to the text of the Urantia Papers, a public domain text of 196 papers and a Foreword.\n\nWhat it does:\n- Fetches any paper, section, or paragraph by reference, such as 2:0.1, with the paragraphs around it.\n- Searches the whole text by keyword or exact phrase, or by meaning.\n- Looks up more than 4,400 named beings, places, and concepts, and finds the paragraphs that name each one.\n- Reads and searches the Bible and 21 other public domain texts, scriptures and classics such as the Dhammapada, the Bhagavad Gita, the Koran, and the Tao Te Ching. Finds the Urantia paragraphs nearest in meaning to a passage, and the Bible verses nearest to a paragraph.\n- Checks a quotation against the text and returns a citation of a paragraph in APA, MLA, Chicago, or BibTeX.\n- Returns links to narration audio for a paragraph.\n\nIt is for readers, students, and researchers who want quoted passages with exact references, and for developers who build study tools.\n\nLimits: every tool only reads, and nothing is saved for the user. There is no account or sign-in. The text is English only. The cross-references are ranked by similarity of meaning; they are not a curated list. Each other text is one public domain translation. The plugin quotes the text and does not interpret it for the user.\n\nThis is an independent community project. It is not affiliated with Urantia Foundation.",
+        "longDescription": "Urantia Papers gives the assistant direct, structured access to the text of the Urantia Papers, a public domain text of 196 papers and a Foreword.\n\nWhat it does:\n- Fetches any paper, section, or paragraph by reference, such as 2:0.1, with the paragraphs around it.\n- Reads and searches a Spanish translation of the whole text as well as the English text.\n- Searches the whole text by keyword or exact phrase, or by meaning.\n- Looks up more than 4,400 named beings, places, and concepts, and finds the paragraphs that name each one.\n- Reads and searches the Bible and 21 other public domain texts, scriptures and classics such as the Dhammapada, the Bhagavad Gita, the Koran, and the Tao Te Ching. Finds the Urantia paragraphs nearest in meaning to a passage, and the Bible verses nearest to a paragraph.\n- Checks a quotation against the text and returns a citation of a paragraph in APA, MLA, Chicago, or BibTeX.\n- Returns links to narration audio for a paragraph.\n\nIt is for readers, students, and researchers who want quoted passages with exact references, and for developers who build study tools.\n\nLimits: every tool only reads, and nothing is saved for the user. There is no account or sign-in. The Spanish text is a machine translation, labeled as one on each paragraph; the other texts are in English. The cross-references are ranked by similarity of meaning; they are not a curated list. Each other text is one public domain translation. The plugin quotes the text and does not interpret it for the user.\n\nThis is an independent community project. It is not affiliated with Urantia Foundation.",
         "developerName": "Urantia.dev",
         "category": "Education & Research",
         "capabilities": [
           "Search the text by keyword or meaning",
           "Read papers and paragraphs by reference",
+          "Read and search the text in Spanish",
           "Look up named beings, places, and concepts",
           "Find related Bible passages",
           "Read texts of other traditions"
@@ -80,6 +81,12 @@
               "expected_behavior": "Identifies Machiventa Melchizedek as a Melchizedek Son who appeared at Salem, and gives paragraph references for each statement, such as 93:1.3 and 93:2.1."
             },
             {
+              "description": "Read a paragraph in Spanish",
+              "prompt": "Muéstrame el párrafo 2:5.10 de los Documentos de Urantia en español.",
+              "tools_triggered": "paragraphs.get",
+              "expected_behavior": "Returns paragraph 2:5.10 in Spanish, which begins \"Pero el amor de Dios es un afecto paternal inteligente y previsor\", with its reference and a note that it is a machine translation."
+            },
+            {
               "description": "Find Urantia paragraphs related to a Bible verse",
               "prompt": "Which Urantia paragraphs are closest in meaning to Matthew 5:3?",
               "tools_triggered": "bible.verse.urantia_parallels",
@@ -106,7 +113,7 @@
         "demo_recording_url": "https://youtu.be/-2WJRON0ZOE"
       },
       "publication": {
-        "release_notes": "26 read-only tools: the Urantia Papers, the World English Bible, and 21 other public domain texts (scriptures and classics), with quote checks and citations, plus a research skill for cited answers."
+        "release_notes": "The text in Spanish too: the paper, paragraph, and search tools take lang \"es\". 26 read-only tools: the Urantia Papers, the World English Bible, and 21 other public domain texts (scriptures and classics), with quote checks and citations, plus a research skill for cited answers."
       }
     }
   }
