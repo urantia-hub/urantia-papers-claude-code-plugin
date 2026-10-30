@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "urantia-papers",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Search and read the Urantia Papers in English and Spanish: paragraph lookup by reference, keyword and semantic search, named entities, and cross-references to the Bible and 21 other public domain texts, scriptures and classics. 26 read-only tools.",
   "author": {
     "name": "Urantia.dev",
