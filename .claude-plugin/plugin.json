@@ -1,7 +1,7 @@
 {
   "name": "urantia-papers",
-  "version": "1.4.0",
-  "description": "Search and read the Urantia Papers: paragraph lookup, keyword and semantic search, named entities, and cross-references to the Bible and 21 other public domain texts, scriptures and classics. 26 read-only tools, no key.",
+  "version": "1.4.1",
+  "description": "Search and read the Urantia Papers in English and Spanish: paragraph lookup, keyword and semantic search, named entities, and cross-references to the Bible and 21 other public domain texts, scriptures and classics. 26 read-only tools, no key.",
   "author": {
     "name": "Urantia.dev",
     "url": "https://urantia.dev"

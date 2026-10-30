@@ -1,6 +1,6 @@
 # Urantia Papers plugin
 
-Search and read the Urantia Papers from Claude Code, Cursor, Gemini CLI, ChatGPT, or Codex. The plugin connects the hosted [urantia.dev](https://urantia.dev) MCP server and adds a research skill for well-cited answers. No key, no account, no local process.
+Search and read the Urantia Papers, in English and Spanish, with the Bible and 21 other texts, from Claude Code, Cursor, Gemini CLI, ChatGPT, or Codex. The plugin connects the hosted [urantia.dev](https://urantia.dev) MCP server and adds a research skill for well-cited answers. No key, no account, no local process.
 
 ## Install
 

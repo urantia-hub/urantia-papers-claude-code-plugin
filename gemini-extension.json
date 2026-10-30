@@ -1,7 +1,7 @@
 {
   "name": "urantia-papers",
-  "version": "1.4.0",
-  "description": "Search and read the Urantia Papers by reference, keyword, or meaning. 26 read-only tools and a research skill. No key or account.",
+  "version": "1.4.1",
+  "description": "Search and read the Urantia Papers in English and Spanish by reference, keyword, or meaning, with the Bible and 21 other texts. 26 read-only tools and a research skill. No key or account.",
   "mcpServers": {
     "urantia-papers": {
       "httpUrl": "https://api.urantia.dev/mcp"
