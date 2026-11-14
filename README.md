@@ -37,7 +37,7 @@ Setup for other clients: [docs.urantia.dev/mcp-servers](https://docs.urantia.dev
 
 ## What's included
 
-- **MCP server:** `https://api.urantia.dev/mcp` (Streamable HTTP). 26 read-only tools.
+- **MCP server:** `https://api.urantia.dev/mcp` (Streamable HTTP). 28 read-only tools.
 - **Research skill:** `skills/urantia-research`, which tells the model which tool to use and how to cite.
 
 ## Tools
@@ -66,6 +66,8 @@ Setup for other clients: [docs.urantia.dev/mcp-servers](https://docs.urantia.dev
 | `works.urantia_parallels` | The nearest Urantia paragraphs for a passage of a work |
 | `quotes.verify` | Check a quotation against the text of the Papers |
 | `cite.get` | A citation of a paragraph in APA, MLA, Chicago, or BibTeX |
+| `editions.list` | The editions of the text, from the 1955 first printing to the Standard Reference Text of 2024 |
+| `editions.variants` | Each change to the text since 1955, by paper, paragraph, edition, or between two editions |
 
 ## Example prompts
 
@@ -75,6 +77,7 @@ Setup for other clients: [docs.urantia.dev/mcp-servers](https://docs.urantia.dev
 - "Show me paragraph 2:5.10 with the paragraphs around it."
 - "Which Urantia paragraphs are closest in meaning to Matthew 5:3?"
 - "What does the Dhammapada say about anger? Show the nearest Urantia paragraphs."
+- "How did paragraph 98:3.8 read in the 1955 first printing, and what changed since?"
 
 ## Links
 

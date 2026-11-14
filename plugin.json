@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "urantia-papers",
-  "version": "1.4.2",
-  "description": "Search and read the Urantia Papers in English and Spanish: paragraph lookup by reference, keyword and semantic search, named entities, and cross-references to the Bible and 21 other public domain texts, scriptures and classics. 26 read-only tools.",
+  "version": "1.5.0",
+  "description": "Search and read the Urantia Papers in English and Spanish: paragraph lookup by reference, keyword and semantic search, named entities, and cross-references to the Bible and 21 other public domain texts, scriptures and classics. 28 read-only tools.",
   "author": {
     "name": "Urantia.dev",
     "email": "kelson@urantia.dev",
@@ -25,7 +25,7 @@
       "interface": {
         "displayName": "Urantia Papers",
         "shortDescription": "Search, read, and cite",
-        "longDescription": "Urantia Papers gives the assistant direct, structured access to the text of the Urantia Papers, a public domain text of 196 papers and a Foreword.\n\nWhat it does:\n- Fetches any paper, section, or paragraph by reference, such as 2:0.1, with the paragraphs around it.\n- Reads and searches a Spanish translation of the whole text as well as the English text.\n- Searches the whole text by keyword or exact phrase, or by meaning.\n- Looks up more than 4,400 named beings, places, and concepts, and finds the paragraphs that name each one.\n- Reads and searches the Bible and 21 other public domain texts, scriptures and classics such as the Dhammapada, the Bhagavad Gita, the Koran, and the Tao Te Ching. Finds the Urantia paragraphs nearest in meaning to a passage, and the Bible verses nearest to a paragraph.\n- Checks a quotation against the text and returns a citation of a paragraph in APA, MLA, Chicago, or BibTeX.\n- Returns links to narration audio for a paragraph.\n\nIt is for readers, students, and researchers who want quoted passages with exact references, and for developers who build study tools.\n\nLimits: every tool only reads, and nothing is saved for the user. There is no account or sign-in. The Spanish text is a machine translation, labeled as one on each paragraph; the other texts are in English. The cross-references are ranked by similarity of meaning; they are not a curated list. Each other text is one public domain translation. The plugin quotes the text and does not interpret it for the user.\n\nThis is an independent community project. It is not affiliated with Urantia Foundation.",
+        "longDescription": "Urantia Papers gives the assistant direct, structured access to the text of the Urantia Papers, a public domain text of 196 papers and a Foreword.\n\nWhat it does:\n- Fetches any paper, section, or paragraph by reference, such as 2:0.1, with the paragraphs around it.\n- Reads and searches a Spanish translation of the whole text as well as the English text.\n- Searches the whole text by keyword or exact phrase, or by meaning.\n- Looks up more than 4,400 named beings, places, and concepts, and finds the paragraphs that name each one.\n- Reads and searches the Bible and 21 other public domain texts, scriptures and classics such as the Dhammapada, the Bhagavad Gita, the Koran, and the Tao Te Ching. Finds the Urantia paragraphs nearest in meaning to a passage, and the Bible verses nearest to a paragraph.\n- Checks a quotation against the text and returns a citation of a paragraph in APA, MLA, Chicago, or BibTeX.\n- Reads the text as it was in the 1955 first printing or in any later Standard Reference Text, and lists each change since 1955 with its year and reason.\n- Returns links to narration audio for a paragraph.\n\nIt is for readers, students, and researchers who want quoted passages with exact references, and for developers who build study tools.\n\nLimits: every tool only reads, and nothing is saved for the user. There is no account or sign-in. The Spanish text is a machine translation, labeled as one on each paragraph; the other texts are in English. The cross-references are ranked by similarity of meaning; they are not a curated list. Each other text is one public domain translation. The plugin quotes the text and does not interpret it for the user.\n\nThis is an independent community project. It is not affiliated with Urantia Foundation.",
         "developerName": "Urantia.dev",
         "category": "Education & Research",
         "capabilities": [
@@ -113,7 +113,7 @@
         "demo_recording_url": "https://youtu.be/-2WJRON0ZOE"
       },
       "publication": {
-        "release_notes": "The text in Spanish too: the paper, paragraph, and search tools take lang \"es\". 26 read-only tools: the Urantia Papers, the World English Bible, and 21 other public domain texts (scriptures and classics), with quote checks and citations, plus a research skill for cited answers."
+        "release_notes": "Editions of the text: read the 1955 first printing or any later Standard Reference Text with `edition`, and list the changes since 1955 with the new tools editions.list and editions.variants. quotes.verify names each edition that has a quoted wording. 28 read-only tools: the Urantia Papers in English and Spanish, the World English Bible, and 21 other public domain texts, with quote checks and citations, plus a research skill for cited answers."
       }
     }
   }
